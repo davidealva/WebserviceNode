@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const _ = require('lodash');
-const port = 3000
+const port = 8080
 
 function doAddition(str) {
   str = str.split(" ")
