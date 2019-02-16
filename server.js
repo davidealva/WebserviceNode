@@ -50,7 +50,7 @@ app.get('/query', (req, res) => {
 
   } else if (q.endsWith("= ?")) {
     const result = doAddition(q)
-    res.jsonp(result)
+    res.json(result)
 
   } else if (q.startsWith("sonder")) {
     res.send("2-11-5")
@@ -74,7 +74,6 @@ app.get('/query', (req, res) => {
     var arr = q.split('')
 
     if (arr.length == 6) {
-      console.log('its 6')
       move(arr, 1, 0)
       move(arr, 2, 3)
       move(arr, 2, 5)
