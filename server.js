@@ -50,7 +50,7 @@ app.get('/query', (req, res) => {
 
   } else if (q.endsWith("= ?")) {
     const result = doAddition(q)
-    res.send(result)
+    res.jsonp(result)
 
   } else if (q.startsWith("sonder")) {
     res.send("2-11-5")
