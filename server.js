@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const _ = require('lodash');
-const port = 5000
+const port = 3000
 
 function doAddition(str) {
   str = str.split(" ")
@@ -12,7 +12,7 @@ function doAddition(str) {
       return Number(n);
   })
 
-  return results = _.sum(numbers).toString()
+  return results = _.sum(numbers)
 }
 
 function move(arr, old_index, new_index) {
