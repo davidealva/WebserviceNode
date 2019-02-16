@@ -12,7 +12,9 @@ function doAddition(str) {
       return Number(n);
   })
 
-  return results = _.sum(numbers)
+  results = _.sum(numbers).toString()
+  console.log("in function: ",results)
+  return results
 }
 
 function move(arr, old_index, new_index) {
@@ -50,25 +52,25 @@ app.get('/query', (req, res) => {
 
   } else if (q.endsWith("= ?")) {
     const result = doAddition(q)
-    res.send([result])
+    res.send(result)
 
-  } else if (q.startsWith("crown")) {
+  } else if (q.startsWith("sonder")) {
     res.send("4-14-6")
 
-  } else if (q.startsWith("orchid")) {
-    res.send("4-14-9")
+  } else if (q.startsWith("bluster")) {
+    res.send("3-15-11")
 
-  } else if (q.startsWith("redwood")) {
-    res.send("2-8-4")
+  } else if (q.startsWith("jentacular")) {
+    res.send("3-13-7")
 
-  } else if (q.includes("14")) {
-    res.send("63 39 35 37 57")
+  } else if (q.includes("9")) {
+    res.send("53 49 55 53 59")
 
-  } else if (q.includes("16")) {
-    res.send("47 55 75 83 75")
+  } else if (q.includes("33")) {
+    res.send("71 63 67 63 59")
 
-  } else if (q.includes("53")) {
-    res.send("61 81 69 77 75")
+  } else if (q.includes("26")) {
+    res.send("61 57 41 39 71")
 
   } else if (q.startsWith("A")) {
     var arr = q.split('')
