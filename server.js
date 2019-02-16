@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const _ = require('lodash');
-const port = 8080
+const port = 5000
 
 function doAddition(str) {
   str = str.split(" ")
@@ -86,13 +86,6 @@ app.get('/', (req, res) => {
   } else {
     res.send("nothing requested")
   }
-
-
-  // let arr = ["A", "B", "C", "D", "E", "F"];
-  // let index = 1;
-  // arr.unshift(arr.splice(index, 1)[0]);
-  // console.log(arr)
-  // // data = [3, 0, 1, 2, 4, 5]
 
 });
 
