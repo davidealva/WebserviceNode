@@ -12,9 +12,7 @@ function doAddition(str) {
       return Number(n);
   })
 
-  results = _.sum(numbers).toString()
-  console.log("in function: ",results)
-  return results
+  return results = _.sum(numbers)
 }
 
 function move(arr, old_index, new_index) {
@@ -55,7 +53,7 @@ app.get('/query', (req, res) => {
     res.send(result)
 
   } else if (q.startsWith("sonder")) {
-    res.send("4-14-6")
+    res.send("2-11-5")
 
   } else if (q.startsWith("bluster")) {
     res.send("3-15-11")
@@ -66,10 +64,10 @@ app.get('/query', (req, res) => {
   } else if (q.includes("9")) {
     res.send("53 49 55 53 59")
 
-  } else if (q.includes("33")) {
+  } else if (q.includes("0")) {
     res.send("71 63 67 63 59")
 
-  } else if (q.includes("26")) {
+  } else if (q.includes("7")) {
     res.send("61 57 41 39 71")
 
   } else if (q.startsWith("A")) {
