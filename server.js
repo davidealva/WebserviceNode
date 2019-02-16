@@ -33,6 +33,10 @@ function move(arr, old_index, new_index) {
 }
 
 app.get('/', (req, res) => {
+  res.send("index page")
+});
+
+app.get('/query', (req, res) => {
   const q = req.query.q
 
   if (q == "PING") {
@@ -86,7 +90,6 @@ app.get('/', (req, res) => {
   } else {
     res.send("nothing requested")
   }
-
 });
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
