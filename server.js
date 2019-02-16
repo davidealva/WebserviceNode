@@ -50,7 +50,7 @@ app.get('/query', (req, res) => {
 
   } else if (q.endsWith("= ?")) {
     const result = doAddition(q)
-    res.json({result})
+    res.send([result])
 
   } else if (q.startsWith("crown")) {
     res.send("4-14-6")
