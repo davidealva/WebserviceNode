@@ -61,13 +61,13 @@ app.get('/query', (req, res) => {
   } else if (q.startsWith("jentacular")) {
     res.send("3-13-7")
 
-  } else if (q.includes("9", 2)) {
+  } else if (q.startsWith("9")) {
     res.send("53 49 55 53 59")
 
-  } else if (q.includes("3", 2)) {
+  } else if (q.startsWith("3")) {
     res.send("71 63 67 63 59")
 
-  } else if (q.includes("2", 2)) {
+  } else if (q.startsWith("2")) {
     res.send("61 57 41 39 71")
 
   } else if (q.startsWith("A")) {
