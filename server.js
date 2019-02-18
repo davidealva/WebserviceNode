@@ -50,8 +50,9 @@ app.get('/query', (req, res) => {
 
   } else if (q.endsWith("= ?")) {
     const result = doAddition(q)
-    result.toString()
-    res.send(result)
+    // result.toString()
+    console.log(String(result))
+    res.send(String(result))
 
   } else if (q.startsWith("misty")) {
     res.send("2-6-4")
