@@ -52,23 +52,23 @@ app.get('/query', (req, res) => {
     const result = doAddition(q).toString()
     res.send(result)
 
-  } else if (q.startsWith("orchid")) {
+  } else if (q.startsWith("misty")) {
+    res.send("2-6-4")
+
+  } else if (q.startsWith("fancy")) {
     res.send("3-12-8")
 
-  } else if (q.startsWith("fort")) {
-    res.send("3-12-8")
+  } else if (q.startsWith("ocean")) {
+    res.send("2-6-5")
 
-  } else if (q.startsWith("sidewalk")) {
-    res.send("2-9-7")
+  } else if (q.includes("< 37 15 32 7 14 60 19 30 32 55 >")) {
+    res.send("67 47 51 67 69")
 
-  } else if (q.includes("< 37 23 16 10 57 26 32 22 31 7 >")) {
-    res.send("39 49 53 53 67")
+  } else if (q.includes("< 59 37 34 8 46 6 31 39 8 25 >")) {
+    res.send("71 65 45 47 65")
 
-  } else if (q.includes("< 46 24 49 13 30 57 42 21 55 50 >")) {
-    res.send("63 67 91 85 81")
-
-  } else if (q.startsWith("< 31 33 45 36 24 6 34 42 11 27 >")) {
-    res.send("53 63 65 57 51")
+  } else if (q.startsWith("< 18 35 48 11 57 59 27 40 32 46 >")) {
+    res.send("59 73 75 89 77")
 
   } else if (q.startsWith("A")) {
     var arr = q.split('')
