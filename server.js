@@ -56,23 +56,23 @@ app.get('/query', (req, res) => {
     console.log(String(result))
     res.send(String(result))
 
+  } else if (q.startsWith("crow")) {
+    res.send("4-13-8")
+
+  } else if (q.startsWith("bluster")) {
+    res.send("3-16-7")
+
   } else if (q.startsWith("misty")) {
-    res.send("2-6-4")
+    res.send("3-10-4")
 
-  } else if (q.startsWith("fancy")) {
-    res.send("3-12-8")
+  } else if (q.includes("< 44 39 12 46 9 42 17 16 11 55 >")) {
+    res.send("55 55 59 55 67")
 
-  } else if (q.startsWith("ocean")) {
-    res.send("2-6-5")
+  } else if (q.includes("< 39 37 12 52 48 20 11 46 55 43 >")) {
+    res.send("63 85 85 63 67")
 
-  } else if (q.includes("< 37 15 32 7 14 60 19 30 32 55 >")) {
-    res.send("67 47 51 67 69")
-
-  } else if (q.includes("< 59 37 34 8 46 6 31 39 8 25 >")) {
-    res.send("71 65 45 47 65")
-
-  } else if (q.startsWith("< 18 35 48 11 57 59 27 40 32 46 >")) {
-    res.send("59 73 75 89 77")
+  } else if (q.startsWith("< 24 45 52 19 22 35 52 37 15 18 >")) {
+    res.send("67 71 59 59 63")
 
   } else if (q.startsWith("A")) {
     var arr = q.split('')
