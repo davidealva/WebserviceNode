@@ -11,7 +11,7 @@ function doAddition(str) {
   const numbers = arr.map((n) => {
       return Number(n);
   })
-
+  console.log(numbers)
   return results = _.sum(numbers)
 }
 
