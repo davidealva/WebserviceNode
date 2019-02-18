@@ -49,7 +49,8 @@ app.get('/query', (req, res) => {
     res.send("coding")
 
   } else if (q.endsWith("= ?")) {
-    const result = doAddition(q).toString()
+    const result = doAddition(q)
+    result.toString()
     res.send(result)
 
   } else if (q.startsWith("misty")) {
