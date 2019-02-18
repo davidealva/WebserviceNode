@@ -49,8 +49,8 @@ app.get('/query', (req, res) => {
     res.send("coding")
 
   } else if (q.endsWith("= ?")) {
-    const result = doAddition(q)
-    res.json(result)
+    const result = doAddition(q).toString()
+    res.send(result)
 
   } else if (q.startsWith("sonder")) {
     res.send("2-11-5")
