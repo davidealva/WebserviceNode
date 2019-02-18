@@ -7,11 +7,13 @@ function doAddition(str) {
   str = str.split(" ")
   arr = _.compact(str)
   arr = _.dropRight(arr, 2)
-
+  arr = _.pullAll(arr, NaN)
+  console.log("before map ",arr)
   const numbers = arr.map((n) => {
       return Number(n);
   })
-  console.log(numbers)
+
+  console.log("after map ",numbers)
   return results = _.sum(numbers)
 }
 
